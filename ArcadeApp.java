@@ -24,20 +24,6 @@ public class ArcadeApp extends Application {
 			Button gameOne = new Button("BreakOut");
 			Button gameTwo = new Button("Checkers");
 
-			gameOne.setOnAction((event) -> {
-
-					Stage brStage = new Stage();
-
-					AnchorPane pane = new AnchorPane();
-					Scene brScene = new Scene(pane);
-
-					brScene.setFill(Color.BLACK);
-					brStage.setScene(brScene);
-					brStage.sizeToScene();
-					brStage.setTitle("BreakOut");
-					brStage.initModality(Modality.WINDOW_MODAL);
-					brStage.show();
-					});
 			gameTwo.setOnAction((event) -> {
 
 					Checkers checkers = new Checkers();
@@ -58,12 +44,6 @@ public class ArcadeApp extends Application {
 
 			stage.show();
 			/*
-			/* You are allowed to rewrite this start method, add other methods, 
-			 * files, classes, etc., as needed. This currently contains some 
-			 * simple sample code for mouse and keyboard interactions with a node
-			 * (rectangle) in a group. 
-
-
 			 Group group = new Group();           // main container
 			 Rectangle r = new Rectangle(20, 20); // some rectangle
 			 r.setX(50);                          // 50px in the x direction (right)
